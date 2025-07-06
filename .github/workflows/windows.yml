@@ -76,10 +76,10 @@ jobs:
           build\tests\${{ matrix.config.BUILD_TYPE }}\spdlog-utests.exe
 
   # -----------------------------------------------------------------------
-  # MSVC 2019 build matrix
+  # Windows 2025 mscv 2019 build matrix
   # -----------------------------------------------------------------------
   build_2019:
-    runs-on: windows-2019
+    runs-on: windows-2025
     strategy:
       fail-fast: true
       matrix:
