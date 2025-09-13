@@ -1,0 +1,9 @@
+Create Logger
+Log loggerName("MyApp", "myapp.log");
+
+Use Logger
+loggerName.debug("Debug message");
+loggerName.info("Information message");
+loggerName.warn("Warning message");
+loggerName.error("Error message");
+loggerName.fatal("Fatal error message");
