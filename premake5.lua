@@ -4,13 +4,18 @@ project "Logger"
 	staticruntime "off"
 	warnings "off"
 
-    targetdir ("../Binaries/" .. OutputDir .. "/%{prj.name}")
-    objdir ("../Binaries-Intermediates/" .. OutputDir .. "/%{prj.name}")
+    targetdir ("../../../Binaries/" .. OutputDir .. "/%{prj.name}")
+    objdir ("../../../Binaries-Intermediates/" .. OutputDir .. "/%{prj.name}")
 
 	files
 	{
-		"**.cpp",
-		"**.h"
+		"**.h",
+        "**.cpp"
+	}
+
+	includedirs
+	{
+		"include"
 	}
 
 	filter "system:linux"
@@ -20,8 +25,8 @@ project "Logger"
 		
 		files
 		{
-			"**.cpp",
-			"**.h"
+		    "**.h",
+            "**.cpp"
 		}
 
 	filter "system:macosx"
@@ -29,8 +34,8 @@ project "Logger"
 
 		files
 		{
-			"**.cpp",
-			"**.h"
+		    "**.h",
+            "**.cpp"
 		}
 
 	filter "system:windows"
@@ -38,8 +43,8 @@ project "Logger"
 
 		files
 		{
-			"**.cpp",
-			"**.h"
+		    "**.h",
+            "**.cpp"
 		}
 
 	filter "configurations:Debug"
